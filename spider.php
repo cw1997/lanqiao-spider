@@ -32,7 +32,7 @@ for ($i=1; $i < 360; $i++) {
 	}
 	$链接 = 'http://lx.lanqiao.org/problem.page?gpid=T'.$i;
 	$标题 = trim(strip_tags($html->find('div.tit',0)));
-	$内容 = trim(strip_tags($html->find('div.des',0)));
+	$内容 = trim($html->find('div.des',0));
 	$限定 = trim(strip_tags($html->find('div.res',0)));
 	$锦囊1 = trim(strip_tags($html->find('div.helpcont',0)));
 	$锦囊2 = trim(strip_tags($html->find('div.helpcont',1)));
